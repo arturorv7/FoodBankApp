@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6550C7552AE0BE71008E8C0C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 6550C7542AE0BE71008E8C0C /* FirebaseFirestore */; };
+		6550C7572AE0BE71008E8C0C /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6550C7562AE0BE71008E8C0C /* FirebaseFirestoreSwift */; };
+		6553E5472ADB295500E590FD /* FavoritesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6553E5462ADB295500E590FD /* FavoritesViewModel.swift */; };
+		6553E5492ADB2D9C00E590FD /* favoriteListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6553E5482ADB2D9C00E590FD /* favoriteListView.swift */; };
+		65581AD92AD0B56F003581D6 /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65581AD82AD0B56F003581D6 /* UserManager.swift */; };
+		65581ADD2AD0E378003581D6 /* addRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65581ADC2AD0E378003581D6 /* addRecipe.swift */; };
+		65581ADF2AD0E530003581D6 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65581ADE2AD0E530003581D6 /* AboutView.swift */; };
+		65581AE12AD0E5FB003581D6 /* recipeCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65581AE02AD0E5FB003581D6 /* recipeCardView.swift */; };
+		65581AE32AD0E6A6003581D6 /* recipeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65581AE22AD0E6A6003581D6 /* recipeListView.swift */; };
+		65581AE52AD0E70A003581D6 /* recipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65581AE42AD0E70A003581D6 /* recipeView.swift */; };
+		657E5A312AD8C3CE00972017 /* RecipeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 657E5A302AD8C3CE00972017 /* RecipeManager.swift */; };
+		658BD1532ACE2C39002B0896 /* recetarioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658BD1522ACE2C39002B0896 /* recetarioApp.swift */; };
+		658BD1552ACE2C39002B0896 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658BD1542ACE2C39002B0896 /* ContentView.swift */; };
+		658BD1572ACE2C3A002B0896 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 658BD1562ACE2C3A002B0896 /* Assets.xcassets */; };
+		658BD15A2ACE2C3A002B0896 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 658BD1592ACE2C3A002B0896 /* Preview Assets.xcassets */; };
+		658BD1642ACE2C3A002B0896 /* recetarioTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658BD1632ACE2C3A002B0896 /* recetarioTests.swift */; };
+		658BD16E2ACE2C3A002B0896 /* recetarioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658BD16D2ACE2C3A002B0896 /* recetarioUITests.swift */; };
+		658BD1702ACE2C3A002B0896 /* recetarioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658BD16F2ACE2C3A002B0896 /* recetarioUITestsLaunchTests.swift */; };
+		658BD1832ACE2DA5002B0896 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658BD1822ACE2DA5002B0896 /* MenuView.swift */; };
+		658BD1852ACE2DC6002B0896 /* categoriesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658BD1842ACE2DC6002B0896 /* categoriesView.swift */; };
+		658BD1872ACE2DEF002B0896 /* newRecipeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658BD1862ACE2DEF002B0896 /* newRecipeView.swift */; };
+		658BD1892ACE2EFA002B0896 /* favoritesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658BD1882ACE2EFA002B0896 /* favoritesView.swift */; };
+		658BD18C2ACE2F49002B0896 /* settingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658BD18B2ACE2F49002B0896 /* settingsView.swift */; };
+		658BD18E2ACE3075002B0896 /* tabVar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658BD18D2ACE3075002B0896 /* tabVar.swift */; };
+		658BD1902ACE3766002B0896 /* RecetaModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658BD18F2ACE3766002B0896 /* RecetaModel.swift */; };
+		658BD1942ACE3F6A002B0896 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 658BD1932ACE3F6A002B0896 /* GoogleService-Info.plist */; };
+		658BD1972ACE401B002B0896 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 658BD1962ACE401B002B0896 /* FirebaseAnalytics */; };
+		658BD1992ACE401B002B0896 /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 658BD1982ACE401B002B0896 /* FirebaseAnalyticsSwift */; };
+		658BD19C2ACE4438002B0896 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 658BD19B2ACE4438002B0896 /* FirebaseAuth */; };
+		658BD19E2ACE4492002B0896 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658BD19D2ACE4492002B0896 /* LoginView.swift */; };
+		658BD1A02ACE4538002B0896 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658BD19F2ACE4538002B0896 /* SignInView.swift */; };
+		658BD1A22ACE48A5002B0896 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658BD1A12ACE48A5002B0896 /* AuthManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		658BD1602ACE2C3A002B0896 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 658BD1472ACE2C39002B0896 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 658BD14E2ACE2C39002B0896;
+			remoteInfo = recetario;
+		};
+		658BD16A2ACE2C3A002B0896 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 658BD1472ACE2C39002B0896 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 658BD14E2ACE2C39002B0896;
+			remoteInfo = recetario;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6553E5462ADB295500E590FD /* FavoritesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewModel.swift; sourceTree = "<group>"; };
+		6553E5482ADB2D9C00E590FD /* favoriteListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoriteListView.swift; sourceTree = "<group>"; };
+		65581AD82AD0B56F003581D6 /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
+		65581ADC2AD0E378003581D6 /* addRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addRecipe.swift; sourceTree = "<group>"; };
+		65581ADE2AD0E530003581D6 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		65581AE02AD0E5FB003581D6 /* recipeCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipeCardView.swift; sourceTree = "<group>"; };
+		65581AE22AD0E6A6003581D6 /* recipeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipeListView.swift; sourceTree = "<group>"; };
+		65581AE42AD0E70A003581D6 /* recipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipeView.swift; sourceTree = "<group>"; };
+		657E5A302AD8C3CE00972017 /* RecipeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeManager.swift; sourceTree = "<group>"; };
+		658BD14F2ACE2C39002B0896 /* recetario.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = recetario.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		658BD1522ACE2C39002B0896 /* recetarioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recetarioApp.swift; sourceTree = "<group>"; };
+		658BD1542ACE2C39002B0896 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		658BD1562ACE2C3A002B0896 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		658BD1592ACE2C3A002B0896 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		658BD15F2ACE2C3A002B0896 /* recetarioTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = recetarioTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		658BD1632ACE2C3A002B0896 /* recetarioTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recetarioTests.swift; sourceTree = "<group>"; };
+		658BD1692ACE2C3A002B0896 /* recetarioUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = recetarioUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		658BD16D2ACE2C3A002B0896 /* recetarioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recetarioUITests.swift; sourceTree = "<group>"; };
+		658BD16F2ACE2C3A002B0896 /* recetarioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recetarioUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		658BD1822ACE2DA5002B0896 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		658BD1842ACE2DC6002B0896 /* categoriesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoriesView.swift; sourceTree = "<group>"; };
+		658BD1862ACE2DEF002B0896 /* newRecipeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = newRecipeView.swift; sourceTree = "<group>"; };
+		658BD1882ACE2EFA002B0896 /* favoritesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = favoritesView.swift; sourceTree = "<group>"; };
+		658BD18B2ACE2F49002B0896 /* settingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingsView.swift; sourceTree = "<group>"; };
+		658BD18D2ACE3075002B0896 /* tabVar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabVar.swift; sourceTree = "<group>"; };
+		658BD18F2ACE3766002B0896 /* RecetaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetaModel.swift; sourceTree = "<group>"; };
+		658BD1932ACE3F6A002B0896 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		658BD19D2ACE4492002B0896 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		658BD19F2ACE4538002B0896 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		658BD1A12ACE48A5002B0896 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		658BD14C2ACE2C39002B0896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6550C7572AE0BE71008E8C0C /* FirebaseFirestoreSwift in Frameworks */,
+				658BD1992ACE401B002B0896 /* FirebaseAnalyticsSwift in Frameworks */,
+				6550C7552AE0BE71008E8C0C /* FirebaseFirestore in Frameworks */,
+				658BD19C2ACE4438002B0896 /* FirebaseAuth in Frameworks */,
+				658BD1972ACE401B002B0896 /* FirebaseAnalytics in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		658BD15C2ACE2C3A002B0896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		658BD1662ACE2C3A002B0896 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		65581AD72AD0B50A003581D6 /* firestore */ = {
+			isa = PBXGroup;
+			children = (
+				65581AD82AD0B56F003581D6 /* UserManager.swift */,
+				657E5A302AD8C3CE00972017 /* RecipeManager.swift */,
+			);
+			path = firestore;
+			sourceTree = "<group>";
+		};
+		658BD1462ACE2C39002B0896 = {
+			isa = PBXGroup;
+			children = (
+				658BD1512ACE2C39002B0896 /* recetario */,
+				658BD1622ACE2C3A002B0896 /* recetarioTests */,
+				658BD16C2ACE2C3A002B0896 /* recetarioUITests */,
+				658BD1502ACE2C39002B0896 /* Products */,
+				658BD19A2ACE4438002B0896 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		658BD1502ACE2C39002B0896 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				658BD14F2ACE2C39002B0896 /* recetario.app */,
+				658BD15F2ACE2C3A002B0896 /* recetarioTests.xctest */,
+				658BD1692ACE2C3A002B0896 /* recetarioUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		658BD1512ACE2C39002B0896 /* recetario */ = {
+			isa = PBXGroup;
+			children = (
+				658BD1932ACE3F6A002B0896 /* GoogleService-Info.plist */,
+				658BD1522ACE2C39002B0896 /* recetarioApp.swift */,
+				658BD17C2ACE2C5E002B0896 /* views */,
+				658BD1812ACE2CE2002B0896 /* models */,
+				658BD1562ACE2C3A002B0896 /* Assets.xcassets */,
+				658BD1802ACE2CCA002B0896 /* viewModels */,
+				658BD1582ACE2C3A002B0896 /* Preview Content */,
+			);
+			path = recetario;
+			sourceTree = "<group>";
+		};
+		658BD1582ACE2C3A002B0896 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				658BD1592ACE2C3A002B0896 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		658BD1622ACE2C3A002B0896 /* recetarioTests */ = {
+			isa = PBXGroup;
+			children = (
+				658BD1632ACE2C3A002B0896 /* recetarioTests.swift */,
+			);
+			path = recetarioTests;
+			sourceTree = "<group>";
+		};
+		658BD16C2ACE2C3A002B0896 /* recetarioUITests */ = {
+			isa = PBXGroup;
+			children = (
+				658BD16D2ACE2C3A002B0896 /* recetarioUITests.swift */,
+				658BD16F2ACE2C3A002B0896 /* recetarioUITestsLaunchTests.swift */,
+			);
+			path = recetarioUITests;
+			sourceTree = "<group>";
+		};
+		658BD17C2ACE2C5E002B0896 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				658BD17D2ACE2C84002B0896 /* main */,
+				658BD17F2ACE2C9F002B0896 /* components */,
+				658BD17E2ACE2C93002B0896 /* detail */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		658BD17D2ACE2C84002B0896 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				65581AD72AD0B50A003581D6 /* firestore */,
+				658BD1542ACE2C39002B0896 /* ContentView.swift */,
+				658BD1822ACE2DA5002B0896 /* MenuView.swift */,
+				658BD1842ACE2DC6002B0896 /* categoriesView.swift */,
+				658BD1862ACE2DEF002B0896 /* newRecipeView.swift */,
+				658BD1882ACE2EFA002B0896 /* favoritesView.swift */,
+				658BD18B2ACE2F49002B0896 /* settingsView.swift */,
+				658BD18D2ACE3075002B0896 /* tabVar.swift */,
+				658BD19D2ACE4492002B0896 /* LoginView.swift */,
+				658BD19F2ACE4538002B0896 /* SignInView.swift */,
+				658BD1A12ACE48A5002B0896 /* AuthManager.swift */,
+				65581ADE2AD0E530003581D6 /* AboutView.swift */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		658BD17E2ACE2C93002B0896 /* detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = detail;
+			sourceTree = "<group>";
+		};
+		658BD17F2ACE2C9F002B0896 /* components */ = {
+			isa = PBXGroup;
+			children = (
+				65581ADC2AD0E378003581D6 /* addRecipe.swift */,
+				65581AE02AD0E5FB003581D6 /* recipeCardView.swift */,
+				65581AE22AD0E6A6003581D6 /* recipeListView.swift */,
+				65581AE42AD0E70A003581D6 /* recipeView.swift */,
+				6553E5482ADB2D9C00E590FD /* favoriteListView.swift */,
+			);
+			path = components;
+			sourceTree = "<group>";
+		};
+		658BD1802ACE2CCA002B0896 /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewModels;
+			sourceTree = "<group>";
+		};
+		658BD1812ACE2CE2002B0896 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				658BD18F2ACE3766002B0896 /* RecetaModel.swift */,
+				6553E5462ADB295500E590FD /* FavoritesViewModel.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		658BD19A2ACE4438002B0896 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		658BD14E2ACE2C39002B0896 /* recetario */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 658BD1732ACE2C3A002B0896 /* Build configuration list for PBXNativeTarget "recetario" */;
+			buildPhases = (
+				658BD14B2ACE2C39002B0896 /* Sources */,
+				658BD14C2ACE2C39002B0896 /* Frameworks */,
+				658BD14D2ACE2C39002B0896 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = recetario;
+			packageProductDependencies = (
+				658BD1962ACE401B002B0896 /* FirebaseAnalytics */,
+				658BD1982ACE401B002B0896 /* FirebaseAnalyticsSwift */,
+				658BD19B2ACE4438002B0896 /* FirebaseAuth */,
+				6550C7542AE0BE71008E8C0C /* FirebaseFirestore */,
+				6550C7562AE0BE71008E8C0C /* FirebaseFirestoreSwift */,
+			);
+			productName = recetario;
+			productReference = 658BD14F2ACE2C39002B0896 /* recetario.app */;
+			productType = "com.apple.product-type.application";
+		};
+		658BD15E2ACE2C3A002B0896 /* recetarioTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 658BD1762ACE2C3A002B0896 /* Build configuration list for PBXNativeTarget "recetarioTests" */;
+			buildPhases = (
+				658BD15B2ACE2C3A002B0896 /* Sources */,
+				658BD15C2ACE2C3A002B0896 /* Frameworks */,
+				658BD15D2ACE2C3A002B0896 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				658BD1612ACE2C3A002B0896 /* PBXTargetDependency */,
+			);
+			name = recetarioTests;
+			productName = recetarioTests;
+			productReference = 658BD15F2ACE2C3A002B0896 /* recetarioTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		658BD1682ACE2C3A002B0896 /* recetarioUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 658BD1792ACE2C3A002B0896 /* Build configuration list for PBXNativeTarget "recetarioUITests" */;
+			buildPhases = (
+				658BD1652ACE2C3A002B0896 /* Sources */,
+				658BD1662ACE2C3A002B0896 /* Frameworks */,
+				658BD1672ACE2C3A002B0896 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				658BD16B2ACE2C3A002B0896 /* PBXTargetDependency */,
+			);
+			name = recetarioUITests;
+			productName = recetarioUITests;
+			productReference = 658BD1692ACE2C3A002B0896 /* recetarioUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		658BD1472ACE2C39002B0896 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					658BD14E2ACE2C39002B0896 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					658BD15E2ACE2C3A002B0896 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 658BD14E2ACE2C39002B0896;
+					};
+					658BD1682ACE2C3A002B0896 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 658BD14E2ACE2C39002B0896;
+					};
+				};
+			};
+			buildConfigurationList = 658BD14A2ACE2C39002B0896 /* Build configuration list for PBXProject "recetario" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 658BD1462ACE2C39002B0896;
+			packageReferences = (
+				658BD1952ACE401B002B0896 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = 658BD1502ACE2C39002B0896 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				658BD14E2ACE2C39002B0896 /* recetario */,
+				658BD15E2ACE2C3A002B0896 /* recetarioTests */,
+				658BD1682ACE2C3A002B0896 /* recetarioUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		658BD14D2ACE2C39002B0896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				658BD15A2ACE2C3A002B0896 /* Preview Assets.xcassets in Resources */,
+				658BD1572ACE2C3A002B0896 /* Assets.xcassets in Resources */,
+				658BD1942ACE3F6A002B0896 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		658BD15D2ACE2C3A002B0896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		658BD1672ACE2C3A002B0896 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		658BD14B2ACE2C39002B0896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				658BD1852ACE2DC6002B0896 /* categoriesView.swift in Sources */,
+				657E5A312AD8C3CE00972017 /* RecipeManager.swift in Sources */,
+				65581AE12AD0E5FB003581D6 /* recipeCardView.swift in Sources */,
+				65581ADF2AD0E530003581D6 /* AboutView.swift in Sources */,
+				65581AE32AD0E6A6003581D6 /* recipeListView.swift in Sources */,
+				658BD1552ACE2C39002B0896 /* ContentView.swift in Sources */,
+				65581AD92AD0B56F003581D6 /* UserManager.swift in Sources */,
+				658BD18C2ACE2F49002B0896 /* settingsView.swift in Sources */,
+				658BD1A22ACE48A5002B0896 /* AuthManager.swift in Sources */,
+				658BD1872ACE2DEF002B0896 /* newRecipeView.swift in Sources */,
+				6553E5472ADB295500E590FD /* FavoritesViewModel.swift in Sources */,
+				65581AE52AD0E70A003581D6 /* recipeView.swift in Sources */,
+				658BD1832ACE2DA5002B0896 /* MenuView.swift in Sources */,
+				658BD1892ACE2EFA002B0896 /* favoritesView.swift in Sources */,
+				6553E5492ADB2D9C00E590FD /* favoriteListView.swift in Sources */,
+				658BD1A02ACE4538002B0896 /* SignInView.swift in Sources */,
+				65581ADD2AD0E378003581D6 /* addRecipe.swift in Sources */,
+				658BD1532ACE2C39002B0896 /* recetarioApp.swift in Sources */,
+				658BD19E2ACE4492002B0896 /* LoginView.swift in Sources */,
+				658BD1902ACE3766002B0896 /* RecetaModel.swift in Sources */,
+				658BD18E2ACE3075002B0896 /* tabVar.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		658BD15B2ACE2C3A002B0896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				658BD1642ACE2C3A002B0896 /* recetarioTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		658BD1652ACE2C3A002B0896 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				658BD16E2ACE2C3A002B0896 /* recetarioUITests.swift in Sources */,
+				658BD1702ACE2C3A002B0896 /* recetarioUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		658BD1612ACE2C3A002B0896 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 658BD14E2ACE2C39002B0896 /* recetario */;
+			targetProxy = 658BD1602ACE2C3A002B0896 /* PBXContainerItemProxy */;
+		};
+		658BD16B2ACE2C3A002B0896 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 658BD14E2ACE2C39002B0896 /* recetario */;
+			targetProxy = 658BD16A2ACE2C3A002B0896 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		658BD1712ACE2C3A002B0896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		658BD1722ACE2C3A002B0896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		658BD1742ACE2C3A002B0896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"recetario/Preview Content\"";
+				DEVELOPMENT_TEAM = KUV89X9WVL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Team6.recetario;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		658BD1752ACE2C3A002B0896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"recetario/Preview Content\"";
+				DEVELOPMENT_TEAM = KUV89X9WVL;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Team6.recetario;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		658BD1772ACE2C3A002B0896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KUV89X9WVL;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Team6.recetarioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/recetario.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/recetario";
+			};
+			name = Debug;
+		};
+		658BD1782ACE2C3A002B0896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KUV89X9WVL;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Team6.recetarioTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/recetario.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/recetario";
+			};
+			name = Release;
+		};
+		658BD17A2ACE2C3A002B0896 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KUV89X9WVL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Team6.recetarioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = recetario;
+			};
+			name = Debug;
+		};
+		658BD17B2ACE2C3A002B0896 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KUV89X9WVL;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Team6.recetarioUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = recetario;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		658BD14A2ACE2C39002B0896 /* Build configuration list for PBXProject "recetario" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				658BD1712ACE2C3A002B0896 /* Debug */,
+				658BD1722ACE2C3A002B0896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		658BD1732ACE2C3A002B0896 /* Build configuration list for PBXNativeTarget "recetario" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				658BD1742ACE2C3A002B0896 /* Debug */,
+				658BD1752ACE2C3A002B0896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		658BD1762ACE2C3A002B0896 /* Build configuration list for PBXNativeTarget "recetarioTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				658BD1772ACE2C3A002B0896 /* Debug */,
+				658BD1782ACE2C3A002B0896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		658BD1792ACE2C3A002B0896 /* Build configuration list for PBXNativeTarget "recetarioUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				658BD17A2ACE2C3A002B0896 /* Debug */,
+				658BD17B2ACE2C3A002B0896 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		658BD1952ACE401B002B0896 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6550C7542AE0BE71008E8C0C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 658BD1952ACE401B002B0896 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		6550C7562AE0BE71008E8C0C /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 658BD1952ACE401B002B0896 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		658BD1962ACE401B002B0896 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 658BD1952ACE401B002B0896 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		658BD1982ACE401B002B0896 /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 658BD1952ACE401B002B0896 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		658BD19B2ACE4438002B0896 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 658BD1952ACE401B002B0896 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 658BD1472ACE2C39002B0896 /* Project object */;
+}
